@@ -1,7 +1,7 @@
 // var floor = Math.floor(1.8);
 // var ceiling = Math.ceil( Math.PI );
 // var random = Math.random();
-    
+
 // console.log(floor);
 // console.log(ceiling);
 // console.log(random);
@@ -13,7 +13,7 @@ function d6() { //roll a six sided die
     roll = Math.floor(roll * 6 + 1);
     return roll;
 }
-    
+
 var playerRoll = d6();
 console.log("The player rolled: " + playerRoll);
 
@@ -45,7 +45,7 @@ var lifesAnswers = [
     "Very doubtful."
 ];
 
-function consult(){
+function consult() {
     var randomIndex = 0;
     randomIndex = Math.floor(Math.random() * lifesAnswers.length);
 
