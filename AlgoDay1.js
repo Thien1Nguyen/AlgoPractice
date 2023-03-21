@@ -27,14 +27,14 @@ console.log(factorial(5))
 // values are customizable. You can think of the above ThreesFives() function as
 // BetterThreesFives(100,4000000).
 
-function ThreeFives(start,end) {
+function ThreeFives(start, end) {
     var result = 0;
     for (var i = start; i <= end; i++) {
-        if ( (i % 3 === 0 || i % 5 === 0) && (i % 15 !== 0) ) {
+        if ((i % 3 === 0 || i % 5 === 0) && (i % 15 !== 0)) {
             result = i;
             console.log(i);
         }
     }
 }
-ThreeFives(1,30);
+ThreeFives(1, 30);
 
