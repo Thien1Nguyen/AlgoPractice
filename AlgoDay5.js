@@ -23,13 +23,13 @@ Hint - Can we put a for loop inside another for loop?
 function isPresent2d(arr2d, value){
     let inside = false;
     for(let i = 0; i < arr2d.length; i++){
-        for(let j = 0; j<arr2d.length; j++){
-           if(arr2d[i][j] === value){
+        for(let j = 0; j<arr2d[i].length; j++){
+            if(arr2d[i][j] === value){
                 inside = true;
-           }
+                return inside;
+            }
         }
     }
-    return inside;
 }
 
 // test code
@@ -47,7 +47,7 @@ Don't use built-in methods like Array.prototype.flat() but feel free to use .pus
 function flatten(arr2d) {
     var flat = [];
     for(let i = 0; i < arr2d.length; i++){
-        for(let j = 0; j<arr2d.length; j++){
+        for(let j = 0; j<arr2d[i].length; j++){
             flat.push(arr2d[i][j]);
         }
     }
