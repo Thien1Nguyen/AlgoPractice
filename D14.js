@@ -37,18 +37,32 @@ const expected5 = "";
  * @param {string} separator To separate each item of the given arr.
  * @returns {string} The given array items as a string separated by the given separator.
  */
+// function join(arr, separator) {
+//     result = '"'
+//     for(let i = 0; i< arr.length; i++){
+//         if(i != arr.length-1){ //checking if the index is NOT the last index
+//             result += arr[i] + separator;
+//         }
+//         else{
+//             result += arr[i]
+//         }
+//     }
+//     return result + '"'
+// }
+
+// modded to make it faster by Dione
 function join(arr, separator) {
     result = '"'
     for(let i = 0; i< arr.length; i++){
-        if(i != arr.length-1){
-            result += arr[i] + separator;
-        }
-        else{
-            result += arr[i]
+        result += arr[i]
+        if(i != arr.length-1){ //checking if the index is NOT the last index
+            result += separator;
         }
     }
     return result + '"'
 }
+
+
 
 console.log(join(arr1, separator1))
 console.log(join(arr2, separator2))
