@@ -25,12 +25,14 @@ function reverseString(str) {
 var x = "";
 
 for(let i = str.length-1; i >= 0; i--){
-    x+=(str[i])
+    x += str.substring(i,1)
     }
 return x;
 }
 
 console.log(reverseString(str1))
-console.log(reverseString(str2))
-console.log(reverseString(str3))
-console.log(reverseString(str4))
+// console.log(reverseString(str2))
+// console.log(reverseString(str3))
+// console.log(reverseString(str4))
+
+//Bonus: learn more about substring! :D
