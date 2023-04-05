@@ -27,19 +27,19 @@
  * @param {number} target
  * @return {number[]}
  */
-var twoSum = function(nums, target) {
-    let result = [];        // Blank array to hold the result
-    for(var i = 0; i < nums.length; i++){ // a loop to cycle through nums length
-        let temp = nums[i]; // to hold on to one of the index to compare it with the second index
-        for(var j = i+1; j<nums.length; j++){ // cycling through the rest of the index to find the second result
-            if(nums[i] + nums[j] === target){
-            result.push(i)
-            result.push(j)
-            return result;
-            }
-        }
-    }
-};
+// var twoSum = function(nums, target) {
+//     let result = [];        // Blank array to hold the result
+//     for(var i = 0; i < nums.length; i++){ // a loop to cycle through nums length
+//         let temp = nums[i]; // to hold on to one of the index to compare it with the second index
+//         for(var j = i+1; j<nums.length; j++){ // cycling through the rest of the index to find the second result
+//             if(nums[i] + nums[j] === target){
+//             result.push(i)
+//             result.push(j)
+//             return result;
+//             }
+//         }
+//     }
+// };
 //Spencer hash map solution 
 function twoSum(arr, target) {
     //Your code here
@@ -56,3 +56,5 @@ function twoSum(arr, target) {
     }
 
 }
+
+console.log(twoSum([2,7,11,15], 9))
