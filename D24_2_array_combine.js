@@ -35,14 +35,6 @@ function interleaveArrays(arr1, arr2) {
     if(arr1.length == 0 && arr2.lenght == 0){
         return arr3
     }
-    var lengths = 0
-
-    if(arr1.length >= arr2.length){
-        lengths = arr1.length
-    }
-    else{
-        lengths = arr2.length
-    }
 
     for(var i = 0; i < arr1.length || i < arr2.length; i++){
         if(arr1.length > i){
@@ -62,3 +54,4 @@ console.log(interleaveArrays(arrA2, arrB2), "expected: ", expected2)
 console.log(interleaveArrays(arrA3, arrB3), "expected: ", expected3)
 console.log(interleaveArrays(arrA4, arrB4), "expected: ",expected4)
 /*****************************************************************************/
+
