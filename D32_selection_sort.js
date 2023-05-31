@@ -42,7 +42,7 @@ function selectionSort(nums = []) {
     // inside j loop have a conditional that compares for min
     // inside the if, we have found a smaller val, so make that the new min
     // after j loop swap (if current and min are different)
-    
+
     function selectionSort(numbers = []) {
         // nested loop
         
